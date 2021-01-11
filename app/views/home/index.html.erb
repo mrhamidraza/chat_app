@@ -1,0 +1,11 @@
+<!--https://localhost:5000/v1/portal/sso/validate-->
+<!--https://localhost:5000/v1/portal/iserver/auth/status-->
+<%#= form_tag "https://localhost:5000/v1/portal/iserver/secdef/search" do %>
+<%#= form_tag "https://localhost:5000/v1/portal/iserver/auth/status" do %>
+<%#= form_tag "https://localhost:5000/v1/portal//tickle" do %>
+<%= form_tag "https://localhost:5000/v1/portal/iserver/reauthenticate" do %>
+  <%#= hidden_field_tag 'symbol', 'FB' %>
+    <%#= hidden_field_tag 'name', true %>
+
+  <%= submit_tag "Submit" %>
+<% end %>

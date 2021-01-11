@@ -1,0 +1,13 @@
+<div class="mb-3">
+  <%= link_to rooms_path, class: 'btn btn-primary' do %>
+    All Rooms
+  <% end %>
+</div>
+
+<% if @users.present? %>
+  <nav class="nav flex-column">
+    <% @users.each do |user| %>
+      <%= link_to user, load_conversation_path(user), class: 'nav-link room-nav-link' %>
+    <% end %>
+  </nav>
+<% end %>
